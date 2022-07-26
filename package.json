@@ -1,0 +1,13 @@
+{
+  "name": "guhaapi",
+  "version": "1.1.0",
+  "description": "Low Usage Secure Data Encryption Algorithm API, Written in Java, Python, and TypeScript",
+  "author": "Yamuna Software Solutions",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yamunasoftware/GuhaAPI.git"
+  },
+  "license": "MIT",
+  "homepage": "https://yamunasoftware.github.io",
+  "main": "/src/GuhaJavaScriptAPI/guha.ts" 
+}

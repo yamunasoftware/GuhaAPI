@@ -1,0 +1,9 @@
+LICENSE
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+GuhaPythonAPI.egg-info/PKG-INFO
+GuhaPythonAPI.egg-info/SOURCES.txt
+GuhaPythonAPI.egg-info/dependency_links.txt
+GuhaPythonAPI.egg-info/top_level.txt
