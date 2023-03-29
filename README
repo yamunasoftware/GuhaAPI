@@ -16,29 +16,31 @@ To install this package you can either copy and paste the code or the guha.ts or
 
 ```npm install guhaapi```
 ```pip install GuhaPythonAPI```
+
 ```XML
 <repositories>
-	<repository>
-		<id>jitpack.io</id>
-		<url>https://jitpack.io</url>
-	</repository>
+  <repository>
+    <id>jitpack.io</id>
+    <url>https://jitpack.io</url>
+  </repository>
 </repositories> 
 
 <dependency>
-	<groupId>com.github.yamunasoftware</groupId>
-	<artifactId>GuhaAPI</artifactId>
-	<version>Tag</version>
+  <groupId>com.github.yamunasoftware</groupId>
+  <artifactId>GuhaAPI</artifactId>
+  <version>Tag</version>
 </dependency>
 ```
+
 ```Gradle
 allprojects {
-	repositories {
-		maven { url 'https://jitpack.io' }
-	}
+  repositories {
+    maven { url 'https://jitpack.io' }
+  }
 }
 
 dependencies {
-	implementation 'com.github.yamunasoftware:GuhaAPI:Tag'
+  implementation 'com.github.yamunasoftware:GuhaAPI:Tag'
 }
 ```
 
@@ -52,15 +54,17 @@ If you are working with JavaScript in the web, you can use the UNPKG CDN service
 
 ### Setup
 
-The best way to use this API is to import all of the Guha functions and this declaration will ensure a smooth development process. The JavaScript implementation uses EcmaScript Modules, for your reference. It is beneficial if the class instantiation only takes place once because all of the contents are static. For, Python you should import the package into your project. The best way to declare this object is as follows below in JavaScript Python, and Java respectively. 
+The best way to use this API is to import all of the Guha functions and this declaration will ensure a smooth development process. The JavaScript implementation uses EcmaScript Modules, for your reference. It is beneficial if the class instantiation only takes place once because all of the contents are static. For, Python you should import the package into your project. The best way to declare this object is as follows below in JavaScript Python, and Java respectively.
 
 ```JavaScript
 import { Guha } from '.../guha';
-``` 
+```
+
 ```Python
 from guha import Guha
 guha = Guha()
 ```
+
 ```Java
 import GuhaJavaAPI.Guha;
 ```
@@ -71,10 +75,12 @@ To use the encryption algorithm, you have to generate a key first using the ```g
 
 ```JavaScript
 Guha.generateKey();
-``` 
+```
+
 ```Python
 guha.generateKey()
 ```
+
 ```Java
 Guha.generateKey();
 ```
@@ -86,9 +92,11 @@ The encryption algorithm uses the index of the key and the index of the data. Th
 ```JavaScript
 Guha.encrypt(key, input, times);
 ```
+
 ```Python
 guha.encrypt(key, input, times)
 ```
+
 ```Java
 Guha.encrypt(key, input, times);
 ```
@@ -100,14 +108,16 @@ The decryption algorithm uses the inverse of the encryption algorithm to reach t
 ```JavaScript
 Guha.decrypt(key, input, times);
 ```
+
 ```Python
 guha.decrypt(key, input, times)
 ```
+
 ```Java
 Guha.decrypt(key, input, times);
 ```
 
-### Tests 
+### Tests
 
 All of the tests are located in the "tests.ts", "tests.py", or "Tests.java" files in the "src/GuhaJavaScriptAPI, src/GuhaPythonAPI, or src/GuhaJavaAPI" directories. There are various tests built into these test files that you can see to verify the validity of the API. Note that if you use the UNPKG service for JavaScript, you will not be able to access the test functions. The usage is in JavaScript, Python, and Java respectively below.
 
@@ -118,6 +128,7 @@ console.log(tests.testEncryption(data, times));
 console.log(tests.testDecryption(initialData, data, key, times));
 console.log(tests.testFullAPI(initialData, times));
 ```
+
 ```Python
 import tests
 
@@ -125,6 +136,7 @@ print(tests.testEncryption(data, times))
 print(tests.testDecryption(initialData, data, key, times))
 print(tests.testFullAPI(initialData, times))
 ```
+
 ```Java
 import GuhaJavaAPI.Tests;
 ...
